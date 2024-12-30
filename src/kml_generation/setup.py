@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'service = kml_generation.kml_node.py'
         ],
     },
 )
