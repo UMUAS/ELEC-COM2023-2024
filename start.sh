@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[! -e /dev/THS2 || ! -e /dev/THS1 ]]; then 
+if [[! -e /dev/ttyTHS2 || ! -e /dev/ttyTHS1 ]]; then 
 	echo "Error: One or both serial devices (/dev/ttyTHS2, /dev/ttyTHS1)" 
 	exit 1 
 fi 
@@ -8,6 +8,6 @@ fi
 
 docker run -it \ 
    --name "$CONTAINER_NAME"\ 
-   --device=/dev/THS1\ 
-   --device=/dev/THS2\
+   --device=/dev/ttyTHS1\ 
+   --device=/dev/ttyTHS2\
    "$IMAGE_NAME"
