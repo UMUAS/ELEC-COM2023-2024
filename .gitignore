@@ -1,0 +1,45 @@
+# Build and install directories
+/build/
+/install/
+/log/
+
+# Colcon cache and setup files
+.colcon/
+.colcon_*_log/
+
+# Python cache files
+*.pyc
+__pycache__/
+
+# ROS 2-generated files
+*.msg.c
+*.srv.c
+*.action.c
+*.idl.c
+*.hpp
+*.cpp
+*_type_support.*
+
+# Editor and IDE files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.~*
+.DS_Store
+.idea/
+.vscode/
+*.code-workspace
+
+# Generated documentation
+docs/html/
+docs/latex/
+
+# Other system or temporary files
+*.lock
+*.env
+*.log
+*.pid
+*.state
+*.tmp
+*.gz
